@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta a los Reyes Magos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Dancing+Script:wght@600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cielo" aria-hidden="true"></div>
+  <div class="estrella" aria-hidden="true">✦</div>
+
+  <main class="carta">
+    <header>
+      <p class="corona" aria-hidden="true">👑 👑 👑</p>
+      <h1>Queridos Reyes Magos</h1>
+      <p class="saludo">Melchor, Gaspar y Baltasar:</p>
+      <p id="mensaje" class="mensaje"></p>
+    </header>
+
+    <nav class="filtros no-print" aria-label="Opciones">
+      <button class="filtro activo" data-filtro="todo">Todo</button>
+      <button class="filtro" data-filtro="juegos">Juegos</button>
+      <button class="filtro" data-filtro="extras">Otros regalos</button>
+      <button id="imprimir" class="boton-imprimir">🖨️ Imprimir carta</button>
+    </nav>
+
+    <section id="seccion-extras" class="seccion" data-seccion="extras">
+      <h2>Regalos especiales</h2>
+      <ul id="lista-extras" class="lista-extras"></ul>
+    </section>
+
+    <section id="seccion-juegos" class="seccion" data-seccion="juegos">
+      <h2>Juegos de mi lista de deseados de Steam</h2>
+      <p class="ayuda">Ordenados por preferencia. Pulsa en cualquiera para verlo en Steam.</p>
+      <ul id="lista-juegos" class="rejilla"></ul>
+    </section>
+
+    <section class="resumen">
+      <p id="total"></p>
+      <p class="pd"><em>P.D.: Si no cabe todo en los camellos, con algo de la lista me conformo. Os dejo agua y turrón junto a los zapatos.</em></p>
+    </section>
+
+    <footer>
+      <p>Con mucho cariño,</p>
+      <p id="firma" class="firma"></p>
+      <p id="actualizado" class="actualizado"></p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

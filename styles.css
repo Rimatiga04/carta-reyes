@@ -1,0 +1,242 @@
+:root {
+  --noche: #0d1433;
+  --noche-2: #1d2a5c;
+  --papel: #f6ecd2;
+  --papel-oscuro: #e6d3a6;
+  --tinta: #3b2a1a;
+  --oro: #c9962b;
+  --oro-claro: #f2d27a;
+  --rojo: #8c1c13;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.1rem;
+  color: var(--tinta);
+  background: radial-gradient(ellipse at top, var(--noche-2), var(--noche) 70%);
+  padding: 4rem 1rem;
+}
+
+/* Cielo estrellado */
+.cielo {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, #fff, transparent),
+    radial-gradient(1px 1px at 30% 70%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 50% 10%, #fff, transparent),
+    radial-gradient(1px 1px at 70% 40%, #fff, transparent),
+    radial-gradient(1px 1px at 85% 80%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 90% 15%, #fff, transparent),
+    radial-gradient(1px 1px at 20% 90%, #fff, transparent),
+    radial-gradient(1px 1px at 60% 85%, #fff, transparent);
+  background-size: 400px 400px;
+  opacity: .7;
+  animation: titilar 6s ease-in-out infinite alternate;
+}
+@keyframes titilar { to { opacity: .35; } }
+
+.estrella {
+  position: fixed;
+  top: 1rem;
+  right: 8%;
+  font-size: 3rem;
+  color: var(--oro-claro);
+  text-shadow: 0 0 20px var(--oro-claro), 0 0 40px var(--oro);
+  pointer-events: none;
+}
+
+/* La carta */
+.carta {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3.5rem clamp(1.25rem, 5vw, 4rem);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,.5), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(160,110,40,.18), transparent 50%),
+    var(--papel);
+  border-radius: 6px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.55), inset 0 0 80px rgba(150,100,30,.25);
+}
+.carta::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 2px solid var(--oro);
+  border-radius: 4px;
+  pointer-events: none;
+  outline: 1px solid rgba(201,150,43,.4);
+  outline-offset: 4px;
+}
+
+header { text-align: center; }
+.corona { font-size: 1.6rem; margin: 0; letter-spacing: .5rem; }
+
+h1 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  color: var(--rojo);
+  margin: .5rem 0;
+}
+.saludo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+}
+.mensaje {
+  max-width: 640px;
+  margin: 0 auto;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+h2 {
+  font-family: "Cinzel Decorative", serif;
+  color: var(--rojo);
+  font-size: 1.35rem;
+  border-bottom: 1px solid var(--oro);
+  padding-bottom: .4rem;
+  margin-top: 2.5rem;
+}
+.ayuda { font-size: .95rem; opacity: .75; margin-top: -.25rem; }
+
+/* Filtros */
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 2rem;
+}
+.filtros button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid var(--oro);
+  background: transparent;
+  color: var(--tinta);
+  padding: .35rem 1rem;
+  border-radius: 999px;
+  transition: background .2s;
+}
+.filtros button:hover { background: var(--papel-oscuro); }
+.filtros .activo { background: var(--rojo); color: var(--papel); border-color: var(--rojo); }
+.boton-imprimir { margin-left: auto; }
+
+/* Extras */
+.lista-extras { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; }
+.extra {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .75rem 1rem;
+  background: rgba(255,255,255,.45);
+  border: 1px dashed var(--oro);
+  border-radius: 6px;
+}
+.extra .icono { font-size: 2rem; width: 2.5rem; text-align: center; flex-shrink: 0; }
+.extra .info { flex: 1; }
+.extra .nombre { font-weight: 600; }
+.extra .meta { font-size: .9rem; opacity: .75; }
+.extra a.ver, .juego a { color: inherit; }
+.extra a.ver {
+  font-size: .9rem;
+  white-space: nowrap;
+  border: 1px solid var(--tinta);
+  padding: .2rem .7rem;
+  border-radius: 999px;
+  text-decoration: none;
+}
+.extra a.ver:hover { background: var(--tinta); color: var(--papel); }
+
+/* Juegos */
+.rejilla {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1.1rem;
+}
+.juego {
+  position: relative;
+  background: #fffaf0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(60,40,10,.2);
+  transition: transform .2s, box-shadow .2s;
+}
+.juego:nth-child(odd) { transform: rotate(-.6deg); }
+.juego:nth-child(even) { transform: rotate(.6deg); }
+.juego:hover { transform: rotate(0) translateY(-4px); box-shadow: 0 8px 20px rgba(60,40,10,.3); }
+.juego a { display: block; text-decoration: none; }
+.juego img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 460 / 215;
+  object-fit: cover;
+  background: var(--papel-oscuro);
+}
+.juego .sin-imagen {
+  aspect-ratio: 460 / 215;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  background: var(--papel-oscuro);
+}
+.juego .cuerpo { padding: .6rem .8rem .8rem; }
+.juego .titulo { font-weight: 600; line-height: 1.2; }
+.juego .precio { font-size: .95rem; margin-top: .3rem; }
+.juego .descuento {
+  background: #2e7d32; color: #fff; font-size: .8rem;
+  padding: .05rem .35rem; border-radius: 3px; margin-left: .3rem;
+}
+.juego .tachado { text-decoration: line-through; opacity: .6; font-size: .85rem; margin-left: .3rem; }
+.puesto {
+  position: absolute;
+  top: .4rem; left: .4rem;
+  background: var(--rojo);
+  color: var(--papel);
+  font-weight: 600;
+  font-size: .85rem;
+  width: 1.8rem; height: 1.8rem;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,.4);
+}
+
+.resumen { margin-top: 2.5rem; text-align: center; }
+#total { font-weight: 600; }
+.pd { opacity: .85; }
+
+footer { margin-top: 2rem; text-align: right; }
+.firma {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.2rem;
+  margin: .2rem 0 1rem;
+  color: var(--rojo);
+}
+.actualizado { font-size: .8rem; opacity: .6; text-align: center; }
+
+.oculto { display: none; }
+
+@media (max-width: 560px) {
+  .boton-imprimir { margin-left: 0; }
+  .extra { flex-wrap: wrap; }
+}
+
+/* Impresión */
+@media print {
+  body { background: none; padding: 0; }
+  .cielo, .estrella, .no-print { display: none !important; }
+  .carta { box-shadow: none; max-width: none; }
+  .seccion { display: block !important; }
+  .juego { transform: none !important; break-inside: avoid; box-shadow: none; border: 1px solid #ccc; }
+  .rejilla { grid-template-columns: repeat(3, 1fr); }
+  .extra { break-inside: avoid; }
+}

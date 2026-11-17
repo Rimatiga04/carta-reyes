@@ -1,0 +1,22 @@
+{
+  "steamid": "76561199066856681",
+  "updated": null,
+  "games": [
+    { "appid": 3216600, "name": "KINGDOM HEARTS IV", "price": null },
+    { "appid": 4354570, "name": "FINAL FANTASY VII REVELATION", "price": null },
+    { "appid": 2649560, "name": "Persona 6", "price": null },
+    { "appid": 4824610, "name": "Resident Evil Veronica", "price": null },
+    { "appid": 2963950, "name": "Persona 4 Revival", "price": null },
+    { "appid": 1627720, "name": "Lies of P", "price": null },
+    { "appid": 4231820, "name": "Castlevania: Belmont's Curse", "price": null },
+    { "appid": 1229490, "name": "ULTRAKILL", "price": null },
+    { "appid": 2515020, "name": "FINAL FANTASY XVI", "price": null },
+    { "appid": 108600, "name": "Project Zomboid", "price": null },
+    { "appid": 3017860, "name": "DOOM: The Dark Ages", "price": null },
+    { "appid": 3489700, "name": "Stellar Blade™", "price": null },
+    { "appid": 553850, "name": "HELLDIVERS™ 2", "price": null },
+    { "appid": 2183900, "name": "Warhammer 40,000: Space Marine 2", "price": null },
+    { "appid": 1145350, "name": "Hades II", "price": null },
+    { "appid": 3357650, "name": "PRAGMATA", "price": null }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "remitente": "Tu nombre",
+  "mensaje": "Este año me he portado (casi siempre) muy bien: he estudiado, he ayudado en casa y apenas he dejado platos en el fregadero. Por eso os escribo esta carta con todo lo que me haría ilusión encontrar el 6 de enero.",
+  "extras": [
+    {
+      "nombre": "Vinilo de la banda sonora de Clair Obscur: Expedition 33",
+      "tienda": "Amazon",
+      "icono": "💿",
+      "precio": null,
+      "url": "https://www.amazon.es/dp/B0FJSG1P2T"
+    },
+    {
+      "nombre": "Funko Pop de Sora (Kingdom Hearts)",
+      "tienda": "Amazon",
+      "icono": "🗝️",
+      "precio": null,
+      "url": "https://www.amazon.es/dp/B0C2CGNX6Y"
+    },
+    {
+      "nombre": "Peluche de Kafka (Honkai: Star Rail)",
+      "tienda": "Amazon",
+      "icono": "🕷️",
+      "precio": null,
+      "url": "https://www.amazon.es/dp/B0HB4X25PG"
+    },
+    {
+      "nombre": "LEGO Casco de Sauron (11373)",
+      "tienda": "LEGO",
+      "icono": "🧱",
+      "precio": null,
+      "url": "https://www.lego.com/es-es/product/the-lord-of-the-rings-saurons-helmet-11373"
+    },
+    {
+      "nombre": "GTA VI… o el dinero para comprarlo",
+      "tienda": "Donde sea",
+      "icono": "💶",
+      "precio": null,
+      "url": null,
+      "nota": "Si no está a tiempo, acepto sobre con su importe 😇"
+    }
+  ]
+}
