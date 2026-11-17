@@ -83,7 +83,11 @@ async function iniciar() {
 
   document.getElementById("lista-extras").append(...carta.extras.map(tarjetaExtra));
 
-  const juegos = [...steam.games].sort((a, b) => (a.priority ?? 999) - (b.priority ?? 999));
+  // Mismo orden que Steam: clasificados (1, 2, 3…) primero; prioridad 0 = sin clasificar, al final por fecha.
+  const rango = (g) => (g.priority > 0 ? g.priority : Infinity);
+  const juegos = [...steam.games].sort(
+    (a, b) => rango(a) - rango(b) || (a.date_added ?? 0) - (b.date_added ?? 0)
+  );
   document.getElementById("lista-juegos").append(...juegos.map((j, i) => tarjetaJuego(j, i + 1)));
 
   // Total aproximado (solo lo que tiene precio conocido)
