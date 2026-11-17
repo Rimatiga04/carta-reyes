@@ -22,18 +22,26 @@ try {
   const datos = await json(
     `https://api.steampowered.com/IWishlistService/GetWishlist/v1/?steamid=${STEAMID}`
   );
-  items = (datos.response?.items ?? []).map((i) => ({ appid: i.appid, priority: i.priority }));
+  items = (datos.response?.items ?? []).map((i) => ({
+      appid: i.appid,
+      priority: i.priority,
+      date_added: i.date_added ?? 0,
+    }));
   if (!items.length) throw new Error("Lista vacía (¿es privada?)");
   console.log(`Lista de deseados: ${items.length} juegos`);
 } catch (e) {
   console.warn(`No se pudo leer la lista (${e.message}). Uso los appids guardados.`);
-  items = anterior.games.map((g, i) => ({ appid: g.appid, priority: g.priority ?? i }));
+  items = anterior.games.map((g, i) => ({
+    appid: g.appid,
+    priority: g.priority ?? i + 1,
+    date_added: g.date_added ?? 0,
+  }));
 }
 
 // 2) Detalles de cada juego (nombre, imagen y precio en euros)
 const previos = new Map(anterior.games.map((g) => [g.appid, g]));
 const games = [];
-for (const { appid, priority } of items) {
+for (const { appid, priority, date_added } of items) {
   const base = previos.get(appid) ?? { appid, name: `App ${appid}`, price: null };
   try {
     const d = await json(
@@ -45,6 +53,7 @@ for (const { appid, priority } of items) {
     games.push({
       appid,
       priority,
+      date_added,
       name: info.name,
       image: info.header_image,
       coming_soon: info.release_date?.coming_soon ?? false,
@@ -58,12 +67,15 @@ for (const { appid, priority } of items) {
     console.log(`✓ ${info.name}`);
   } catch (e) {
     console.warn(`✗ ${appid}: ${e.message}`);
-    games.push({ ...base, priority });
+    games.push({ ...base, priority, date_added });
   }
   await esperar(1500); // no saturar la API de Steam
 }
 
-games.sort((a, b) => a.priority - b.priority);
+// Mismo orden que Steam ("Tu clasificación"): primero los clasificados (1, 2, 3…).
+// Prioridad 0 = sin clasificar → van al final, por fecha en que se añadieron.
+const rango = (g) => (g.priority > 0 ? g.priority : Infinity);
+games.sort((a, b) => rango(a) - rango(b) || (a.date_added ?? 0) - (b.date_added ?? 0));
 await writeFile(
   RUTA,
   JSON.stringify({ steamid: STEAMID, updated: new Date().toISOString(), games }, null, 2) + "\n"
