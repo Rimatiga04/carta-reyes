@@ -1,6 +1,6 @@
 {
   "steamid": "76561199066856681",
-  "updated": "2026-11-18T15:35:15.918Z",
+  "updated": "2026-11-19T15:41:39.775Z",
   "games": [
     {
       "appid": 3216600,
@@ -112,8 +112,8 @@
       "release": "17 SEP 2024",
       "price": {
         "initial": 4999,
-        "final": 4999,
-        "discount": 0
+        "final": 1999,
+        "discount": 60
       }
     },
     {
@@ -219,7 +219,7 @@
       "priority": 18,
       "date_added": 1759515912,
       "name": "Sonic Racing: CrossWorlds",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2486820/05bd63661af5e8786b51aed30931af5012f8b762/header_alt_assets_18.jpg?t=1794951691",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2486820/05bd63661af5e8786b51aed30931af5012f8b762/header_alt_assets_18.jpg?t=1795077710",
       "coming_soon": false,
       "release": "25 SEP 2025",
       "price": {
