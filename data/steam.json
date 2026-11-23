@@ -1,6 +1,6 @@
 {
   "steamid": "76561199066856681",
-  "updated": "2026-11-22T14:30:28.210Z",
+  "updated": "2026-11-23T17:59:22.402Z",
   "games": [
     {
       "appid": 3216600,
@@ -321,9 +321,9 @@
       "coming_soon": false,
       "release": "24 SEP 2026",
       "price": {
-        "initial": 5999,
-        "final": 5999,
-        "discount": 0
+        "initial": 6999,
+        "final": 5599,
+        "discount": 20
       }
     },
     {
