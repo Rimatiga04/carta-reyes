@@ -1,6 +1,6 @@
 {
   "steamid": "76561199066856681",
-  "updated": "2026-11-23T17:59:22.402Z",
+  "updated": "2026-11-24T17:37:57.930Z",
   "games": [
     {
       "appid": 3216600,
@@ -51,7 +51,7 @@
       "priority": 6,
       "date_added": 1786791430,
       "name": "Persona 4 Revival ",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2963950/e83b7da1c2e9ddbed1a27038bd86e9714b2aa893/header.jpg?t=1794969647",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2963950/d14b324cb0a9c42fde6f63f5c954fc501cff6fb1/header.jpg?t=1795495793",
       "coming_soon": true,
       "release": "17 FEB 2027",
       "price": {
@@ -140,8 +140,8 @@
       "release": "14 MAY 2025",
       "price": {
         "initial": 4999,
-        "final": 4999,
-        "discount": 0
+        "final": 2499,
+        "discount": 50
       }
     },
     {
@@ -352,6 +352,20 @@
         "initial": 2999,
         "final": 2999,
         "discount": 0
+      }
+    },
+    {
+      "appid": 1174180,
+      "priority": 0,
+      "date_added": 1795506983,
+      "name": "Red Dead Redemption 2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961",
+      "coming_soon": false,
+      "release": "5 DIC 2019",
+      "price": {
+        "initial": 5999,
+        "final": 1499,
+        "discount": 75
       }
     }
   ]
