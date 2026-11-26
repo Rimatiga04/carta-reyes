@@ -1,6 +1,6 @@
 {
   "steamid": "76561199066856681",
-  "updated": "2026-11-25T17:08:56.398Z",
+  "updated": "2026-11-26T16:50:08.232Z",
   "games": [
     {
       "appid": 3216600,
@@ -28,7 +28,7 @@
     },
     {
       "appid": 2649560,
-      "priority": 4,
+      "priority": 3,
       "date_added": 1781810291,
       "name": "Persona 6",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2649560/96402e10ba89cccb7906eecd235d7d812f8f9eb0/header.jpg?t=1781799583",
@@ -38,7 +38,7 @@
     },
     {
       "appid": 4824610,
-      "priority": 5,
+      "priority": 4,
       "date_added": 1780741198,
       "name": "Resident Evil Veronica",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4824610/28045d733a3ada082858b5b1a5149e33ee40f378/header.jpg?t=1780990195",
@@ -48,10 +48,10 @@
     },
     {
       "appid": 2963950,
-      "priority": 6,
+      "priority": 5,
       "date_added": 1786791430,
       "name": "Persona 4 Revival ",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2963950/d14b324cb0a9c42fde6f63f5c954fc501cff6fb1/header.jpg?t=1795495793",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2963950/d14b324cb0a9c42fde6f63f5c954fc501cff6fb1/header.jpg?t=1795631764",
       "coming_soon": true,
       "release": "17 FEB 2027",
       "price": {
@@ -62,7 +62,7 @@
     },
     {
       "appid": 1627720,
-      "priority": 7,
+      "priority": 6,
       "date_added": 1787596525,
       "name": "Lies of P",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627720/header.jpg?t=1794963244",
@@ -76,7 +76,7 @@
     },
     {
       "appid": 4231820,
-      "priority": 8,
+      "priority": 7,
       "date_added": 1771194404,
       "name": "Castlevania: Belmont's Curse",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4231820/6b65aec2c398006aea8b76e1463cc34d0e4ba68b/header.jpg?t=1793067818",
@@ -90,7 +90,7 @@
     },
     {
       "appid": 1229490,
-      "priority": 9,
+      "priority": 8,
       "date_added": 1745269843,
       "name": "ULTRAKILL",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1229490/header.jpg?t=1792046802",
@@ -104,7 +104,7 @@
     },
     {
       "appid": 2515020,
-      "priority": 10,
+      "priority": 9,
       "date_added": 1752277888,
       "name": "FINAL FANTASY XVI",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2515020/header.jpg?t=1773294537",
@@ -114,6 +114,20 @@
         "initial": 4999,
         "final": 1999,
         "discount": 60
+      }
+    },
+    {
+      "appid": 1799840,
+      "priority": 10,
+      "date_added": 1795683513,
+      "name": "Queen's Domain",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1799840/1a209734951f53b019ec9fa03f835def14f2a968/header.jpg?t=1795428375",
+      "coming_soon": false,
+      "release": "30 OCT 2026",
+      "price": {
+        "initial": 1949,
+        "final": 1949,
+        "discount": 0
       }
     },
     {
@@ -177,7 +191,7 @@
       "priority": 15,
       "date_added": 1738425192,
       "name": "Warhammer 40,000: Space Marine 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2183900/header.jpg?t=1790874369",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2183900/bb008c49b132a4038e40237e5d91b59bdb174e97/header_alt_assets_15_spanish.jpg?t=1795706338",
       "coming_soon": false,
       "release": "9 SEP 2024",
       "price": {
@@ -275,7 +289,7 @@
       "priority": 0,
       "date_added": 1782247708,
       "name": "PowerWash Simulator 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2968420/91fea40a711c5a74cce1bb1a9e05c48a379f6aa0/header.jpg?t=1793977018",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2968420/91fea40a711c5a74cce1bb1a9e05c48a379f6aa0/header.jpg?t=1795705924",
       "coming_soon": false,
       "release": "23 OCT 2025",
       "price": {
