@@ -1,6 +1,6 @@
 {
   "steamid": "76561199066856681",
-  "updated": "2026-11-26T16:50:08.232Z",
+  "updated": "2026-11-27T16:35:47.780Z",
   "games": [
     {
       "appid": 3216600,
@@ -51,7 +51,7 @@
       "priority": 5,
       "date_added": 1786791430,
       "name": "Persona 4 Revival ",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2963950/d14b324cb0a9c42fde6f63f5c954fc501cff6fb1/header.jpg?t=1795631764",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2963950/d14b324cb0a9c42fde6f63f5c954fc501cff6fb1/header.jpg?t=1795750339",
       "coming_soon": true,
       "release": "17 FEB 2027",
       "price": {
@@ -117,20 +117,6 @@
       }
     },
     {
-      "appid": 1799840,
-      "priority": 10,
-      "date_added": 1795683513,
-      "name": "Queen's Domain",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1799840/1a209734951f53b019ec9fa03f835def14f2a968/header.jpg?t=1795428375",
-      "coming_soon": false,
-      "release": "30 OCT 2026",
-      "price": {
-        "initial": 1949,
-        "final": 1949,
-        "discount": 0
-      }
-    },
-    {
       "appid": 108600,
       "priority": 11,
       "date_added": 1669047961,
@@ -191,7 +177,7 @@
       "priority": 15,
       "date_added": 1738425192,
       "name": "Warhammer 40,000: Space Marine 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2183900/bb008c49b132a4038e40237e5d91b59bdb174e97/header_alt_assets_15_spanish.jpg?t=1795706338",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2183900/bb008c49b132a4038e40237e5d91b59bdb174e97/header_alt_assets_15_spanish.jpg?t=1795711428",
       "coming_soon": false,
       "release": "9 SEP 2024",
       "price": {
@@ -289,7 +275,7 @@
       "priority": 0,
       "date_added": 1782247708,
       "name": "PowerWash Simulator 2",
-      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2968420/91fea40a711c5a74cce1bb1a9e05c48a379f6aa0/header.jpg?t=1795705924",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2968420/91fea40a711c5a74cce1bb1a9e05c48a379f6aa0/header.jpg?t=1795772884",
       "coming_soon": false,
       "release": "23 OCT 2025",
       "price": {
@@ -350,8 +336,8 @@
       "release": "9 DIC 2020",
       "price": {
         "initial": 5999,
-        "final": 5999,
-        "discount": 0
+        "final": 1799,
+        "discount": 70
       }
     },
     {
@@ -364,8 +350,8 @@
       "release": "25 SEP 2023",
       "price": {
         "initial": 2999,
-        "final": 2999,
-        "discount": 0
+        "final": 1799,
+        "discount": 40
       }
     },
     {
